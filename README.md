@@ -18,7 +18,7 @@ The modules needed to be installed in **Python 2.7** are as follows:
 - sympy 1.3
 - wheel 0.33.1
 *******************
-## source file description
+## source file description in SNN simulation
 - talent_run.sh : the top-level bash shell for runnning the simulation and data processing.
 - Oneinhi_Querlioz.py : the Brian2 simulation script reproduced from the SNN learning algorithm proposed by Querlioz.
 - Oneinhi_Diehl.py : the Brian2 simulation script of single-layer fully-connected SNN using the homeostasis method proposed by Diehl.
@@ -30,7 +30,11 @@ The modules needed to be installed in **Python 2.7** are as follows:
 - evaluation/spike_counter_visualization.py : the python script for visualization the spike number during training.
 - evaluation/testing_accuracy.py : a python script for reading the testing accuracy after every training iteration. This script should be copied to the corresponding simulation folder, so you should check the relative route before running.
 - evaluation/spike_standard_deviation.py : a python script for calculating the spike number deviation after every training iteration. This script should be copied to the main folder, so you should check the relative route before running.
-
+## source file description in Spike generation
+- spike_generation_run.sh : the top-level bash shell for running the spike generation python script.
+- spike_recorder_focal.py : the Brian2 simulation script for generating the spike train for MNIST dataset.
+Before running the spike generation script, MNIST dataset should be saved in a folder "dataset_mnist" along with the folder "Spike generation".
 ## User guide
 The code is tested in bash on Ubuntu 16.04. The top-level script 'talent_run.sh' run most of the scripts for simulation and data process.
-For example, if you want to simulate the SNN learning algorithm with 10000 training examples and 1000 testing examples. You should do 
+For example, if you want to simulate the SNN learning algorithm with 10000 training examples and 1000 testing examples. Firstly, you should run the spike generation script to generate the spike train used in your simulation.
+Secondly, run the 'talent_run.sh' in terminal, and input the simulation parameters as recommended.

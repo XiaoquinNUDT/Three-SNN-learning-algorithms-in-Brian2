@@ -1,7 +1,7 @@
 # Single-layer-SNN-simulation-in-Brian
-The repository offer the simulation scripts of three single-layer SNN learning algorihtms with different homeostasis method proposed by Querlioz, Diehl and the author of this repository.
-> Querlioz D, Bichler O, Dollfus P, et al. Immunity to Device Variations in a Spiking Neural Network With Memristive Nanodevices[J]. IEEE Transactions on Nanotechnology, 2013, 12(3): 288-295.
-> Diehl P U, Cook M. Unsupervised learning of digit recognition using spike-timing-dependent plasticity.[J]. Frontiers in Computational Neuroscience, 2015: 99-99.
+The repository offer the simulation scripts of three single-layer SNN learning algorihtms with different homeostasis method proposed by Querlioz [^1], Diehl [^2] and the author of this repository.
+[^1]: Querlioz D, Bichler O, Dollfus P, et al. Immunity to Device Variations in a Spiking Neural Network With Memristive Nanodevices[J]. IEEE Transactions on Nanotechnology, 2013, 12(3): 288-295.
+[^2]: Diehl P U, Cook M. Unsupervised learning of digit recognition using spike-timing-dependent plasticity.[J]. Frontiers in Computational Neuroscience, 2015: 99-99.
 ## Simulation environment
 The modules needed to be installed in **Python 2.7** are as follows:
 *********************
